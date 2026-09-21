@@ -1,0 +1,36 @@
+Training customers analyzed: 5634
+Training churn rate: 26.54%
+
+Churn by Contract:
+      Contract  customers  churned  churn_rate_percent
+Month-to-month       3102     1326               42.75
+      One year       1173      130               11.08
+      Two year       1359       39                2.87
+
+Churn by TenureGroup:
+ TenureGroup  customers  churned  churn_rate_percent
+ 0-12 months       1737      822               47.32
+13-24 months        818      234               28.61
+25-48 months       1290      261               20.23
+  49+ months       1789      178                9.95
+
+Churn by InternetService:
+InternetService  customers  churned  churn_rate_percent
+            DSL       1937      362               18.69
+    Fiber optic       2483     1045               42.09
+             No       1214       88                7.25
+
+Churn by PaymentMethod:
+            PaymentMethod  customers  churned  churn_rate_percent
+Bank transfer (automatic)       1244      201               16.16
+  Credit card (automatic)       1213      181               14.92
+         Electronic check       1891      865               45.74
+             Mailed check       1286      248               19.28
+
+Monthly charges by churn status:
+       customers  median   mean
+Churn
+No          4139   64.40  61.34
+Yes         1495   79.95  74.86
+
+These summaries show associations, not causes.

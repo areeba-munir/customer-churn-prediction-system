@@ -1,0 +1,86 @@
+﻿Rows: 7043
+Columns: 21
+
+Missing values recognized by Pandas:
+customerID          0
+gender              0
+SeniorCitizen       0
+Partner             0
+Dependents          0
+tenure              0
+PhoneService        0
+MultipleLines       0
+InternetService     0
+OnlineSecurity      0
+OnlineBackup        0
+DeviceProtection    0
+TechSupport         0
+StreamingTV         0
+StreamingMovies     0
+Contract            0
+PaperlessBilling    0
+PaymentMethod       0
+MonthlyCharges      0
+TotalCharges        0
+Churn               0
+
+Empty or whitespace-only values:
+customerID           0
+gender               0
+SeniorCitizen        0
+Partner              0
+Dependents           0
+tenure               0
+PhoneService         0
+MultipleLines        0
+InternetService      0
+OnlineSecurity       0
+OnlineBackup         0
+DeviceProtection     0
+TechSupport          0
+StreamingTV          0
+StreamingMovies      0
+Contract             0
+PaperlessBilling     0
+PaymentMethod        0
+MonthlyCharges       0
+TotalCharges        11
+Churn                0
+
+Exact duplicate rows: 0
+Missing customer IDs: 0
+Duplicate customer IDs: 0
+
+TotalCharges blank or missing: 11
+TotalCharges invalid nonblank values: 0
+
+Numerical summary:
+            tenure  MonthlyCharges  TotalCharges
+count  7043.000000     7043.000000        7032.0
+mean     32.371149       64.761692   2283.300441
+std      24.559481       30.090047   2266.771362
+min       0.000000       18.250000          18.8
+25%       9.000000       35.500000        401.45
+50%      29.000000       70.350000      1397.475
+75%      55.000000       89.850000     3794.7375
+max      72.000000      118.750000        8684.8
+
+Negative-value counts:
+tenure            0
+MonthlyCharges    0
+TotalCharges      0
+
+SeniorCitizen values:
+SeniorCitizen
+0    5901
+1    1142
+
+Churn counts:
+Churn
+No     5174
+Yes    1869
+
+Churn percentages:
+Churn
+No     73.46
+Yes    26.54

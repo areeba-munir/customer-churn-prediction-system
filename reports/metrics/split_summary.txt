@@ -1,0 +1,8 @@
+Random seed: 42
+Requested test fraction: 0.2
+Raw dataset SHA-256: 16320c9c1ec72448db59aa0a26a0b95401046bef5d02fd3aeb906448e3055e91
+Total customers: 7043
+Training customers: 5634
+Final-test customers: 1409
+Overlapping customer IDs: 0
+Use training data only for EDA, tuning, and model selection.
