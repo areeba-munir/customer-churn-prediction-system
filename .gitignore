@@ -1,0 +1,38 @@
+﻿# Virtual environments
+.venv/
+venv/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python caches and build outputs
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Testing and lint caches
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+*.tmp
+tmp/
+
+# Generated intermediate data
+data/processed/
