@@ -1,0 +1,16 @@
+{
+  "model": "Gradient Boosting",
+  "threshold": 0.23,
+  "random_state": 42,
+  "cv_folds": 5,
+  "minimum_precision": 0.5,
+  "selection_rule": "Maximize pooled OOF recall subject to precision >= 0.50",
+  "validation_metrics": {
+    "accuracy": 0.7387291444799432,
+    "precision": 0.5047150471504716,
+    "recall": 0.8234113712374582,
+    "f1": 0.6258261311642095,
+    "roc_auc": 0.84714902942158
+  },
+  "final_test_used": false
+}
