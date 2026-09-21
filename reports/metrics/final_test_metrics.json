@@ -1,0 +1,16 @@
+{
+  "model": "Gradient Boosting",
+  "threshold": 0.23,
+  "test_customers": 1409,
+  "test_sha256": "c2145ed9c870eb1d3a31865b02bde5696a7fc54451974c63028382f267c0ed5b",
+  "artifact_sha256": "85fb09d45130fc8b0d9debd22106440867bdf11489e6bd52db2175dc7aa82ba2",
+  "accuracy": 0.7381121362668559,
+  "precision": 0.5040916530278232,
+  "recall": 0.8235294117647058,
+  "f1": 0.6253807106598985,
+  "roc_auc": 0.8433620088351547,
+  "true_negatives": 732,
+  "false_positives": 303,
+  "false_negatives": 66,
+  "true_positives": 308
+}
