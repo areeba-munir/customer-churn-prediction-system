@@ -4,7 +4,7 @@ An end-to-end machine-learning project that predicts whether a telecom customer 
 
 ## Live application
 
-The Streamlit deployment URL will be added here after deployment.
+**Live application:** [Open the Customer Churn Prediction System](https://customer-churn-prediction-system-cmcuedqx69t5ernatmwcwh.streamlit.app/)
 
 ## Project status
 
@@ -77,7 +77,7 @@ The final test set was excluded from exploratory feature analysis, preprocessing
 The analysis used training data only. Important associations included:
 
 - Month-to-month churn: 42.75%; one-year: 11.08%; two-year: 2.87%
-- Tenure of 0–12 months: 47.32% churn; tenure of 49+ months: 9.95%
+- Tenure of 0â€“12 months: 47.32% churn; tenure of 49+ months: 9.95%
 - Fiber-optic service: 42.09% churn; DSL: 18.69%; no internet service: 7.25%
 - Electronic-check payment: 45.74% churn
 - No online-security service: 41.94% churn; with online security: 14.42%

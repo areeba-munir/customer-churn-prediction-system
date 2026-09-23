@@ -48,7 +48,7 @@ Checked items have been verified.
 - [x] Finalize README and remove resolved pending-status notes.
 - [x] Document the verified isolated reproduction procedure.
 - [ ] Complete final repository and ZIP content review.
-- [ ] Publish GitHub repository and release tag.
+- [x] Publish GitHub repository and release tag.
 - [ ] Generate the release ZIP.
 - [ ] Record the demonstration video.
 - [ ] Upload ZIP and video and verify reviewer access.
