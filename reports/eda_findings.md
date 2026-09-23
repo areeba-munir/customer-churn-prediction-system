@@ -29,10 +29,26 @@ The patterns suggest groups worth investigating for retention outreach.
 They do not establish that changing a contract, service, or payment
 method would prevent churn.
 
-## Limitations and pending analysis
+## Additional focused findings
+
+- Customers without online security had a 41.94% churn rate, compared
+  with 14.42% for customers with online security.
+- Customers without technical support had a 41.75% churn rate, compared
+  with 15.16% for customers with technical support.
+- Senior citizens had a 41.09% churn rate, compared with 23.70% for
+  non-senior customers.
+- Median monthly charges were 79.95 for churners and 64.40 for
+  non-churners.
+- Median total charges were 740.30 for churners and 1,691.90 for
+  non-churners.
+- The generated EDA charts were visually reviewed for readability,
+  labeling, and consistency with the saved metrics.
+
+## Limitations
 
 - Findings describe this sample and may not generalize to other companies.
 - Features may be related to one another.
-- Total charges, additional service fields, and demographic fields
-  still need focused exploration.
-- Generated charts still need visual review.
+- These results show associations and do not establish causation.
+- The training data contained eight missing `TotalCharges` values among
+  customers who did not churn.
+- Demographic fairness and probability calibration were not evaluated.

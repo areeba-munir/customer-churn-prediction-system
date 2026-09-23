@@ -1,56 +1,63 @@
-﻿# Project Requirements Checklist
+# Project Requirements Checklist
 
-Checked items are verified. Unchecked items remain pending.
+Checked items have been verified.
 
 ## Foundation
 - [x] Confirm project path and dataset choice.
-- [x] Verify Python 3.12.10 and Git.
-- [x] Create and verify the virtual environment.
-- [x] Create local project folders.
-- [x] Initialize Git on main.
-- [x] Verify virtual environment and secret exclusions.
-- [x] Install packages and verify imports and dependency compatibility.
-- [x] Pin direct dependencies and record the complete environment.
-- [x] Create and verify the initial README.
-- [ ] Create and verify this checklist.
-- [ ] Configure linting and testing.
-- [ ] Create the first verified Git commit.
+- [x] Verify Python, Git, and virtual environment.
+- [x] Create project structure and Git exclusions.
+- [x] Install, pin, and verify dependencies.
+- [x] Configure Ruff and Pytest.
+- [x] Create milestone commits.
 
 ## Dataset and analysis
-- [ ] Verify dataset source and usage conditions.
-- [ ] Download and preserve the original raw dataset.
-- [ ] Audit schema, target, missing values, duplicates, and class balance.
-- [ ] Reserve a stratified final test set.
-- [ ] Analyze training data and document relevant EDA findings.
+- [x] Download the IBM sample CSV and preserve the raw file.
+- [x] Audit schema, target, blanks, duplicates, and class balance.
+- [x] Check numerical conversion and negative numerical values.
+- [x] Reserve a stratified final test set with no customer overlap.
+- [x] Analyze training-set contract, tenure, internet, payment, and monthly charges.
+- [ ] Complete remaining service, total-charge, and demographic exploration.
+- [ ] Finish dataset attribution and reproducible download instructions.
+- [ ] Visually review all generated analysis and evaluation charts.
 
 ## Modeling
-- [ ] Build leakage-safe preprocessing.
-- [ ] Train an interpretable baseline.
-- [ ] Compare at least three classifiers using stratified cross-validation.
-- [ ] Compare accuracy, precision, recall, F1, and ROC-AUC.
-- [ ] Lock the final model and decision threshold.
-- [ ] Evaluate on the final test set.
-- [ ] Save actual metrics, confusion matrix, and ROC curve.
-- [ ] Explain global feature importance and its limitations.
+- [x] Build and test leakage-safe preprocessing.
+- [x] Train Logistic Regression baseline.
+- [x] Compare three classifier families and a class-weighted variant.
+- [x] Report required cross-validation metrics.
+- [x] Select and freeze model and threshold using training data only.
+- [x] Evaluate the frozen model on the final holdout.
+- [x] Save final metrics, confusion matrix, and ROC curve.
+- [x] Extract global feature importance with limitations.
+- [x] Save and reload the complete pipeline and threshold.
 
-## Application and quality
-- [ ] Save and reload the complete prediction pipeline.
-- [ ] Build the Streamlit customer-input form.
-- [ ] Validate inputs and handle prediction errors.
-- [ ] Display churn status and probability.
-- [ ] Verify automated tests and lint checks.
-- [ ] Verify setup, training, and application startup from a fresh environment.
+## Application and testing
+- [x] Validate customer inputs and service combinations.
+- [x] Display predicted churn status and probability in Streamlit.
+- [x] Demonstrate alert and no-alert results locally.
+- [x] Verify automated Streamlit interactions.
+- [x] Pass all 23 tests and Ruff checks.
+- [x] Install locked dependencies in a fresh Python environment.
+- [x] Pass dependency checks and all tests in the fresh environment.
+- [x] Reproduce frozen-model training and evaluation in an isolated copy.
+- [x] Verify identical final metrics and model artifact fingerprint.
+- [x] Visually confirm the updated billing alignment.
+- [ ] Save and reference application screenshots (intentionally omitted).
 
 ## Documentation and submission
-- [ ] Complete README with verified commands, findings, and metrics.
-- [ ] Add screenshots and known limitations.
-- [ ] Publish the GitHub repository and release tag.
-- [ ] Create and inspect the final source ZIP.
+- [x] Finalize README and remove resolved pending-status notes.
+- [x] Document the verified isolated reproduction procedure.
+- [ ] Complete final repository and ZIP content review.
+- [ ] Publish GitHub repository and release tag.
+- [ ] Generate the release ZIP.
 - [ ] Record the demonstration video.
 - [ ] Upload ZIP and video and verify reviewer access.
 - [ ] Submit required links and save confirmation.
 
-## Blockers and exclusions
+## Scope and limitations
 
-- No current blocker reported.
-- Paid hosting is outside the current scope; the app will run locally.
+- The application runs locally; paid hosting is not required.
+- The model comparison and threshold search were not rerun during
+  the isolated frozen-model reproduction check.
+- Probability calibration and demographic fairness were not evaluated.
+- No current execution blocker is reported.

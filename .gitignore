@@ -36,3 +36,4 @@ tmp/
 
 # Generated intermediate data
 data/processed/
+data/raw/
